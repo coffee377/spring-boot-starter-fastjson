@@ -2,6 +2,9 @@
 
 使用 FastJson 作为实体转换工具
 
+
+https://github.com/alibaba/druid/tree/master/druid-spring-boot-starter
+
 [V 1.0.0 - RELEASE]
 1.spring-boot 版本 2.0.X
 
