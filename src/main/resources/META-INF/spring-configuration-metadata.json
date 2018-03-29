@@ -1,0 +1,156 @@
+{
+  "properties": [
+    {
+      "name": "spring.fastjson.supportedMediaTypes",
+      "type": "java.lang.String",
+      "description": "Description for spring.fastjson.supportedMediaTypes.",
+      "defaultValue": "application/json;charset=UTF-8"
+    },
+    {
+      "name": "spring.fastjson.config.serializerFeatures",
+      "type": "com.alibaba.fastjson.serializer.SerializerFeature",
+      "description": "Description for spring.fastjson.config.serializerFeatures."
+    },
+    {
+      "name": "spring.fastjson.enabled",
+      "type": "java.lang.Boolean",
+      "description": "Whether to enable FastJsonHttpMessageConverter.",
+      "defaultValue": true
+    },
+    {
+      "name": "spring.fastjson.config.dateFormat",
+      "type": "java.lang.String",
+      "description": "Date serialization format."
+    },
+    {
+      "name": "spring.datasource.druid.stat-view-servlet.enabled",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.druid.stat-view-servlet.enabled."
+    },
+    {
+      "name": "spring.datasource.druid.stat-view-servlet.url-pattern",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.druid.stat-view-servlet.url-pattern."
+    },
+    {
+      "name": "spring.datasource.druid.stat-view-servlet.reset-enabled",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.druid.stat-view-servlet.reset-enabled."
+    },
+    {
+      "name": "spring.datasource.druid.stat-view-servlet.login-username",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.druid.stat-view-servlet.login-username."
+    },
+    {
+      "name": "spring.datasource.druid.stat-view-servlet.login-password",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.druid.stat-view-servlet.login-password."
+    },
+    {
+      "name": "spring.datasource.druid.stat-view-servlet.allow",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.druid.stat-view-servlet.allow."
+    },
+    {
+      "name": "spring.datasource.druid.stat-view-servlet.deny",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.druid.stat-view-servlet.deny."
+    },
+    {
+      "name": "spring.datasource.druid.web-stat-filter.enabled",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.druid.web-stat-filter.enabled."
+    },
+    {
+      "name": "spring.datasource.druid.web-stat-filter.url-pattern",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.druid.web-stat-filter.url-pattern."
+    },
+    {
+      "name": "spring.datasource.druid.web-stat-filter.exclusions",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.druid.web-stat-filter.exclusions."
+    },
+    {
+      "name": "spring.datasource.druid.web-stat-filter.session-stat-enabled",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.druid.web-stat-filter.session-stat-enabled."
+    },
+    {
+      "name": "spring.datasource.druid.web-stat-filter.session-stat-max-count",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.druid.web-stat-filter.session-stat-max-count."
+    },
+    {
+      "name": "spring.datasource.druid.web-stat-filter.principal-session-name",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.druid.web-stat-filter.principal-session-name."
+    },
+    {
+      "name": "spring.datasource.druid.web-stat-filter.principal-cookie-name",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.druid.web-stat-filter.principal-cookie-name."
+    },
+    {
+      "name": "spring.datasource.druid.web-stat-filter.profile-enabled",
+      "type": "java.lang.String",
+      "description": "Description for spring.datasource.druid.web-stat-filter.profile-enabled."
+    }
+  ],
+  "hints": [
+    {
+      "name": "spring.fastjson.supportedMediaTypes",
+      "values": [
+        {
+          "value": "application/json;charset=UTF-8"
+        },
+        {
+          "value": "text/html"
+        },
+        {
+          "value": "text/plain"
+        },
+        {
+          "value": "text/xml"
+        }
+      ]
+    },
+    {
+      "name": "spring.fastjson.config.serializerFeatures",
+      "providers": [
+        {
+          "name": "handle-as",
+          "parameters": {
+            "target": "com.alibaba.fastjson.serializer.SerializerFeature"
+          }
+        }
+      ]
+    },
+    {
+      "name": "spring.fastjson.enabled",
+      "values": [
+        {
+          "value": true
+        },
+        {
+          "value": false
+        }
+      ]
+    },
+    {
+      "name": "spring.fastjson.config.dateFormat",
+      "values": [
+        {
+          "value": "yyyy-MM-dd"
+        },
+        {
+          "value": "yyyy-MM-dd HH:mm:ss"
+        },
+        {
+          "value": "HH:mm:ss"
+        }
+      ]
+    }
+  ]
+}
