@@ -2,6 +2,9 @@
 
 使用 FastJson 作为实体转换工具
 
+[V 1.0.0 - RELEASE]
+1.spring-boot 版本 2.0.X
+
 application.yaml 配置文件
 
     spring:
