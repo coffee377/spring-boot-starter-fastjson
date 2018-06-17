@@ -1,21 +1,15 @@
 package com.voc.spring.boot.testcase;
 
 import com.voc.spring.boot.demo.DemoApplication;
-import org.junit.Before;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.MediaType;
-import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.MvcResult;
-import org.springframework.test.web.servlet.setup.MockMvcBuilders;
-import org.springframework.web.context.WebApplicationContext;
 
 import javax.annotation.Resource;
 
@@ -33,8 +27,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = DemoApplication.class)
 @AutoConfigureMockMvc
+@Slf4j
 public class UserControllerTest {
-    private transient final static Logger log = LoggerFactory.getLogger(UserControllerTest.class);
 
     @Resource
     private MockMvc mockMvc;
@@ -43,7 +37,7 @@ public class UserControllerTest {
     public void getUserById() throws Exception {
         MvcResult mvcResult = mockMvc
                 .perform(get("/user/1")
-                        .contentType(MediaType.APPLICATION_JSON_UTF8)
+                                .contentType(MediaType.APPLICATION_JSON_UTF8)
 //                        .param("current", "1")
 //                        .param("size", "2")
                 )
